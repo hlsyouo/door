@@ -32,3 +32,96 @@
 </body>
 </html>
 
+body{
+	background-color: black;
+	margin: 0;
+}
+
+h1, p{
+	color: white;
+	margin: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+h2{
+	color: white;
+	margin: 20px;
+	position: relative;
+	z-index: 1;
+	text-decoration: underline;
+}
+
+.writing{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 30px 40px;
+	max-width: 80%;
+}
+
+.one{
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 80vh;
+	overflow: hidden;
+	gap: 10px; 
+	padding: 0 20px; 
+	box-sizing: border-box;
+}
+
+.a, .b, .c, .d, .e{
+	flex-grow: 1; 
+	height: 100%;
+	display: flex;
+}
+
+.a img, .b img, .c img, .d img, .e img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+.garagegap{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100vh;
+}
+
+.garagegap img{
+	height: 100vh;
+	width: auto;
+	display: block;
+}
+
+.garageglove, .garagepaper, .garagerock, .garagecart{
+	display: inline-block;
+	width: calc(25% - 4px);
+	height: 80vh;
+	vertical-align: top;
+}
+.garageglove img, .garagepaper img, .garagerock img, .garagecart img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+.stuwall, .stuchair{
+	display: inline-block;
+	width: calc(50% - 4px);
+	height: 80vh;
+	vertical-align: top;
+}
+.stuwall img, .stuchair img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+}
